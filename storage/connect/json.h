@@ -43,7 +43,6 @@ typedef struct {
   int   len;
   } STRG, *PSG;
 
-bool IsNum(PSZ s);
 char *NextChr(PSZ s, char sep);
 char *GetJsonNull(void);
 
