@@ -2179,7 +2179,6 @@ row_ins_scan_sec_index_for_duplicate(
 	ulint*		offsets		= NULL;
 	DBUG_ENTER("row_ins_scan_sec_index_for_duplicate");
 
-	ut_ad(flags & BTR_NO_LOCKING_FLAG);
 	ut_ad(s_latch == rw_lock_own_flagged(
 		      &index->lock, RW_LOCK_FLAG_S | RW_LOCK_FLAG_SX));
 
